@@ -5,12 +5,13 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "postgresql"
-  url      = "postgresql://koori:koori123@localhost:5431/login2bd"
+  provider = "prisma-client-js"
+    url      = "postgresql://koori:koori123@localhost:5431/login2bd"
 }
 
 datasource db {
   provider = "postgresql"
+
 }
 
 model User {
