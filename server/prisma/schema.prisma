@@ -6,12 +6,13 @@
 
 generator client {
   provider = "prisma-client-js"
-    url      = "postgresql://koori:koori123@localhost:5431/login2bd"
+    output          = "../src/generated/prisma"
+    moduleFormat  = "cjs"
 }
 
 datasource db {
   provider = "postgresql"
-
+  url      = "postgresql://koori:koori123@localhost:5431/login2bd"
 }
 
 model User {
