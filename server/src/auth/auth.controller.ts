@@ -14,7 +14,7 @@ LogIn(){
 
 @Get('sign-up')
 contenido1(){
-    return this.AuthService.buscaUsers()
+    return this.AuthService.findAllUsers()
 }
 
 }
